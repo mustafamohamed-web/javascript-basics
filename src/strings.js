@@ -1,26 +1,35 @@
 const sayHello = string => {
-  // your code here
+  return ' Hello ' + string + '!'
 };
+console.log(sayHello('world'))
 
 const uppercase = string => {
-  // your code here
+  return string.toUpperCase()
 };
+console.log(uppercase('afjs'))
 
 const lowercase = string => {
-  // your code here
+  return string.toLowerCase()
 };
+console.log(lowercase('ASNJF'))
 
 const countCharacters = string => {
-  // your code here
+  return string.length
+ };
+ console.log(countCharacters('mustada'))
+
+ const firstCharacter = string => {
+  return string.charAt(0)
 };
 
-const firstCharacter = string => {
-  // your code here
-};
+console.log(firstCharacter('abc'))
 
 const firstCharacters = (string, n) => {
-  // your code here
+  return string.slice(string,n)
 };
+console.log(firstCharacters('abcdefg',4))
+
+
 
 module.exports = {
   sayHello,

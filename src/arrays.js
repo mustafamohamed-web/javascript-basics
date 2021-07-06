@@ -1,58 +1,51 @@
 const getNthElement = (index, array) => {
-  // your code here
+  const arrayLength = array.length;
+  return array[index % array.length]
 };
 
-const arrayToCSVString = array => {
-  // your code here
-};
+const arrayToCSVString = array => array.join(',');
 
-const csvStringToArray = string => {
-  // your code here
-};
+const csvStringToArray = string => string.split(',');
+
 
 const addToArray = (element, array) => {
-  // your code here
-};
+  array.push(element);
+  };
 
-const addToArray2 = (element, array) => {
-  // your code here
+  const addToArray2 = (element, array) => {
+    const newArr = [...array, element];
+    return newArr;
 };
-
 const removeNthElement = (index, array) => {
-  // your code here
+  const newArr = array.splice(index, 1)
+  return newArr
 };
 
-const numbersToStrings = numbers => {
-  // your code here
-};
+const numbersToStrings = numbers => numbers.toString().split(',')
+
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  const str = strings.join(' ').toUpperCase().split(' ')
+  return str
 };
 
-const reverseWordsInArray = strings => {
-  // your code here
-};
+const reverseWordsInArray = strings => strings.map(newString=>newString.split('').reverse().join(''));
 
-const onlyEven = numbers => {
-  // your code here
-};
+
+const onlyEven = numbers => numbers.filter(value=> value % 2 == 0)
+  
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  const newArr = [...array]
+  newArr.splice(index, 1);
+  return newArr
 };
 
-const elementsStartingWithAVowel = strings => {
-  // your code here
-};
+const elementsStartingWithAVowel = strings => strings.filter((string) => (string.match(/^[aeiou]/i)))
 
-const removeSpaces = string => {
-  // your code here
-};
+const removeSpaces = string => string.split(' ').join('')
 
-const sumNumbers = numbers => {
-  // your code here
-};
+const sumNumbers = numbers => numbers.reduce ((accumulator, currentValue) => accumulator + currentValue);
 
 const sortByLastLetter = strings => {
   // your code here

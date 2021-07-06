@@ -1,38 +1,24 @@
 const createPerson = (name, age) => {
-  // your code here
+ return {
+   name : name,
+   age : age,
+ }
 };
+const getName = object => object.name
 
-const getName = object => {
-  // your code here
-};
+const getProperty = (property, object) => object[property]
 
-const getProperty = (property, object) => {
-  // your code here
-};
+const hasProperty = (property, object) => object.hasOwnProperty(property);
+  
+const isOver65 = person => person.age>65 ? true:false;
+  
+const getAges = people => people.map(person => person.age);
 
-const hasProperty = (property, object) => {
-  // your code here
-};
+const findByName = (name, people) => people.find(person => person.name===name)
 
-const isOver65 = person => {
-  // your code here
-};
+const findHondas = cars => cars.filter(car => car.manufacturer === 'Honda')
 
-const getAges = people => {
-  // your code here
-};
-
-const findByName = (name, people) => {
-  // your code here
-};
-
-const findHondas = cars => {
-  // your code here
-};
-
-const averageAge = people => {
-  // your code here
-};
+const averageAge = people => people.reduce((accumulator, currentValue) => accumulator + currentValue);
 
 const createTalkingPerson = (name, age) => {
   // your code here

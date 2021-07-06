@@ -1,46 +1,48 @@
 const add = (a, b) => {
-  // your code here
+  return a+b
 };
 
-const subtract = (a, b) => {
-  // your code here
-};
+const subtract = (a,b)=>{
+  return (a)-(b)
+}
 
 const multiply = (a, b) => {
-  // your code here
+  return (a)*(b)
 };
 
-const divide = (a, b) => {
-  // your code here
-};
+console.log(multiply(11,-5));
 
-const power = (a, b) => {
-  // your code here
-};
+const divide = (a,b)=>{
+  return a/b
+}
 
-const round = a => {
-  // your code here
-};
+const power = (a,b)=>{
+  return (a)**b
+}
+
+const round = a =>{
+  return Math.round(a)
+}
 
 const roundUp = a => {
-  // your code here
+  return Math.ceil(a)
 };
 
-const roundDown = a => {
-  // your code here
-};
+const roundDown = a =>{
+  return Math.floor(a)
+}
 
-const absolute = a => {
-  // your code here
-};
+const absolute = a =>{
+  return Math.abs(a)
+}
+const quotient = (a, b) =>{
+  return Math.trunc(a/b)
+  }
+const remainder = (a, b) =>{
+  return a%b
+}
 
-const quotient = (a, b) => {
-  // your code here
-};
 
-const remainder = (a, b) => {
-  // your code here
-};
 
 module.exports = {
   add,
